@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2D Platformer</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		*{
+			box-sizing: border-box;
+
+		}
+
+	</style>
+</head>
+<body>
+<div id="Game">
+<!--Red Container div-->
+<div style="position: relative; display: inline-block;">	
+		
+	<!--smaller Red Container div-->
+
+	<div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+			
+		<!--player health-->
+		<div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+			<div  style="background-color: yellow; height: 30px; width: 100%;"></div>
+
+			<div id="playerHealth" 
+			style="
+			position: 
+			absolute; 
+			background: blue; 
+			top: 0; 
+			right: 0;  
+			bottom:0;
+			width: 100%;">
+			</div>
+		</div>
+
+		<!--timer-->
+
+		<div id="time" style="
+		background-color: red; 
+		width: 100px; 
+		height: 100px; 
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;">
+		
+		30
+		</div>
+		
+
+
+
+
+		<!--enemy health-->
+		<div style="position: relative; height: 30px; width: 100%">
+			<div  style="background-color: yellow; height: 30px;"></div>
+
+			<div id="enmHealth" 
+			style="
+			position: 
+			absolute; 
+			background: blue; 
+			top: 0; 
+			right: 0; 
+			left: 0; 
+			bottom:0;">
+			</div>
+		</div>
+		<div></div>
+	</div>
+	<div id="tie" style="
+	position: absolute; 
+	color: white; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	top: 0; bottom: 0; left: 0; right: 0;
+	display: none;">TIE</div>
+	<canvas></canvas>
+</div>
+
+
+</div>
+	
+<div id="info">
+<ol id="p1">
+	<H3>Player 1 inputs</H3>
+	<li>Move Right: D</li>
+	<li>Move Left: A</li>
+	<li>Jump: D</li>
+	<li>Attack: F</li>
+
+</ol>
+<ol id="p2">
+	<H3>Player 2 inputs</H3>
+	<li>Move Right: Arrow Right</li>
+	<li>Move Left: Arrow Left</li>
+	<li>Jump: Arrow Top</li>
+	<li>Attack: Enter</li>
+
+</ol>
+
+
+</div>
+
+<div id="info2">
+
+
+</div>
+
+<div id="credits">
+	<h2>Credits: All credits for the 2D Assets goes for the Artits from the webseite Itch.io below:
+	</h2>
+
+	<ol>
+		<li>Szadi art: <a href="https://szadiart.itch.io/">Link</a></li>
+		<li>luizmelo: <a href="https://luizmelo.itch.io/">Link</a></li>
+
+	</ol>
+</div>
+<script src="Class/Class.js"></script>
+<script src="script.js"></script>
+	
+</body>
+</html>
